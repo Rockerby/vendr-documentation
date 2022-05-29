@@ -5,7 +5,7 @@ description: Customizing the Order Editor interface in Vendr, the eCommerce solu
 
 With Vendr, there are minimal rules about what information you are required to record about an Order, however, this does pose a problem for how we provide a User Interface for managing Orders when we don't know exactly what properties you are going to be recording.
 
-In order to allow this flexibility whilst still providing an ability to view and manage Orders in the back-office, Vendr's Order Editor interface make use a configuration file to map [Order/Order Line Properties](../properties/) to it's various UI elements.
+In order to allow this flexibility whilst still providing an ability to view and manage Orders in the back-office, Vendr's Order Editor interface makes use of a configuration file to map [Order/Order Line Properties](../properties/) to their various UI elements.
 
 With this configuration file, you can completely customize the Order Editor interface to suit your particular needs.
 
@@ -83,7 +83,7 @@ Where there are editable Order Line Properties for an Order Line, a pencil icon 
 
 ### Customer Config Options
 
-The Customer config block configures which Order properties relate to an Orders customer information. The following properties are supported.
+The Customer config block configures which Order properties relate to an Order's customer information. The following properties are supported.
 
 | Key | Description |
 | ---- | ----------- |
@@ -116,7 +116,7 @@ Clicking the Customer Details `Edit` button will display an edit interface like 
 
 ### Billing Config Options
 
-The Billing config block configures which Order properties relate to an Orders billing information. The following properties are supported.
+The Billing config block configures which Order properties relate to an Order's billing information. The following properties are supported.
 
 | Key | Description |
 | ---- | ----------- |
@@ -150,17 +150,17 @@ Clicking the Customer Details `Edit` button will display an edit interface like 
 
 <message-box type="warn" heading="Important">
 
-It is not possible to modify an Orders billing Country once the Order has been finalized as changing the Country could affect the final cost of an Order. If a customer requires a Billing Country to be changed, the Order will need to be refunded and a new one placed.
+It is not possible to modify an Order's billing Country once the Order has been finalized as changing the Country could affect the final cost of an Order. If a customer requires a Billing Country to be changed, the Order will need to be refunded and a new one placed.
 
 </message-box>
 
 ### Shipping Config Options
 
-The Shipping config block configures which Order properties relate to an Orders shipping information. The following properties are supported.
+The Shipping config block configures which Order properties relate to an Order's shipping information. The following properties are supported.
 
 | Key | Description |
 | ---- | ----------- |
-| `enabled` | Sets whether the collection of shipping information is enabled or not. If set to `false` not shipping info will be displayed (Default: `true`) |
+| `enabled` | Sets whether the collection of shipping information is enabled or not. If set to `false` shipping info will not be displayed (Default: `true`) |
 | `sameAsBilling` | Determines the Order property to use as a flag to indicate the shipping address is the same as the billing address |
 | `firstName` | The first name of the shipping contact |
 | `lastName` | The last name of the shipping contact |
@@ -217,7 +217,7 @@ If the `sameAsBilling` toggle switch is toggled, the appropriate Order property 
 
 ### Notes Config Options
 
-The Notes config block configures which Order properties relate to an Orders note information. The following properties are supported.
+The Notes config block configures which Order properties relate to an Order's note information. The following properties are supported.
 
 | Key | Description |
 | ---- | ----------- |
